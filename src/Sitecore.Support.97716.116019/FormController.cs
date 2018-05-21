@@ -54,7 +54,7 @@ namespace Sitecore.Support.Forms.Mvc.Controllers
         }
 
         [FormErrorHandler, SubmittedFormHandler, WffmValidateAntiForgeryToken, HttpPost]
-        public virtual ActionResult Index([ModelBinder(typeof(FormModelBinder))] FormViewModel formViewModel)
+        public virtual ActionResult Index([ModelBinder(typeof(Sitecore.Support.Forms.Mvc.Controllers.ModelBinders.FormModelBinder))] FormViewModel formViewModel)
         {
             return this.ProcessedForm(formViewModel, "");
         }

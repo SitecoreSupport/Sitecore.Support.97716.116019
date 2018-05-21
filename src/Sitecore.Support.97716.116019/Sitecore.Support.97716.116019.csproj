@@ -21,6 +21,7 @@
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -72,7 +73,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoMapper.cs" />
+    <Compile Include="DefaultFormModelBinder.cs" />
     <Compile Include="FormController.cs" />
+    <Compile Include="FormModelBinder.cs" />
     <Compile Include="InitializeRoutes.cs" />
     <Compile Include="ProcessedFormResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
